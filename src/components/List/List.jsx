@@ -5,30 +5,13 @@ import useStyles from './styles';
 
 
 
-const List = () => {
+const List = ({places}) => {
     const classes = useStyles();
     const [type, setType] = useState('restaurants');
     const [raiting, setRating] = useState('');
     const [loading, setLoading] = useState(true);
 
-    const places = [
-        {
-            name: 'Cool Place'
-        },
-        {
-            name: 'Best Beer'
-        },
-        {
-            name: 'Best Pizza'
-        },
-        {
-            name: 'Best Burger'
-        },
-        {
-            name: 'Best Coffee'
-        }
-    ];
-
+    
 
     return (
         <div className={classes.container}>
